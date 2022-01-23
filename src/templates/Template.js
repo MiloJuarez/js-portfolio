@@ -1,11 +1,11 @@
-import getData from '../utils/getData.js';
-import github from '../assets/images/github.png';
-import twitter from '../assets/images/twitter.png';
-import instagram from '../assets/images/instagram.png';
+import getData from "@utils/getData.js";
+import github from "@images/github.png";
+import twitter from "@images/twitter.png";
+import instagram from "@images/instagram.png";
 
 const Template = async () => {
-  const data = await getData();
-  const view = `
+    const data = await getData();
+    const view = `
     <div class="About">
       <div class="card">
         <div class="card_details">
@@ -39,7 +39,7 @@ const Template = async () => {
       </div>
     </div>
   `;
-  return view;
+    return view;
 };
 
 export default Template;
